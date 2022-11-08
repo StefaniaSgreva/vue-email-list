@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- my css -->
     <link rel="stylesheet" href="./CSS/style.css">
     <!-- cdn axios  -->
@@ -14,12 +16,18 @@
 </head>
 <body>
     <div id="app">
-        <div class="container">
-            <!-- Show emails only if they are at least 10 -->
-            <ul v-if="emails.length >= 10">
-                <!-- Print the emails contained in the emails array -->
-                <li v-for="(email,index) in emails" :key="index">{{email}}</li>
-            </ul>
+         <div class="container">
+            <div class="card">
+                <h1>Random Email Generator</h1>
+                <!-- Show emails only if they are at least 10 -->
+                <ul v-if="emails.length >= 10">
+                    <!-- Print the emails contained in the emails array -->
+                    <li v-for="(email,index) in emails" :key="index">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="random-mail">{{email}}</span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <!-- my js  -->
