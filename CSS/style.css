@@ -5,7 +5,6 @@
 }
 body{
     font-family: sans-serif;
-   
 }
 .container{
     width: 100%;
@@ -29,8 +28,7 @@ body{
     padding: 80px;
     border-radius: 25px;
     box-shadow: 0 0 12px 0 lightblue;
-    color: #4A280B;
-    
+    color: #4A280B; 
 }
 h1{
     margin-bottom: 50px;
@@ -61,7 +59,6 @@ button{
     letter-spacing: 1.5px;
     box-shadow: 0 6px 5px 0 lightblue;
 }
-
 button:active{
     transform: translateY(7px);
     box-shadow: 0 3px 0 0 lightblue;
